@@ -23,23 +23,42 @@
     align-items: center;
     color: white;
     height: 100%;
-    .menu-btn{
+    .menu-btn {
       // position: absolute;
       // float: left;
       width: 74px;
-      img{
+      img {
         height: 48px;
       }
     }
     .logo {
       width: 170px;
       padding-left: 30px;
-      img{
+      img {
         height: 28px;
       }
     }
-    .search_bar{
-
+    .search_bar_area {
+      width: 500px;
+      padding-left: 50px;
+      .search_bar {
+        background-color: #222223;
+        padding: 10px 20px 10px 20px;
+        display: flex;
+        align-items: center;
+        .search_bar_name{
+          color: white;
+          border-right: solid 2px #2d2d2e;
+          margin-right: 30px;
+        }
+        .search_badge{
+          height: 30px;
+          width: 150px;
+          background-color: #151516;
+          border-radius: 3px;
+          padding: 4px;
+        }
+      }
     }
   }
   .header-right {

@@ -12,8 +12,14 @@ class Header extends Component {
           <div className="logo">
             <img src={Logo} alt="" />
           </div>
-          <div className="search_bar">
-              
+          <div className="search_bar_area">
+            <div className="search_bar">
+              <div className="search_bar_name">
+                Dog
+              </div>
+              <div className="search_badge">
+              </div>
+            </div>
           </div>
         </div>
       </div>
