@@ -39,10 +39,11 @@
       }
     }
     .search_bar_area {
-      width: 500px;
+      width: 50%;
       padding-left: 50px;
       .search_bar {
         background-color: #222223;
+        border-radius: 3px;
         padding: 10px 20px 10px 20px;
         display: flex;
         align-items: center;
@@ -57,6 +58,29 @@
           background-color: #151516;
           border-radius: 3px;
           padding: 4px;
+          display: flex;
+          align-items: center;
+          .k-mark{
+            display: flex;
+            align-items: center;
+            border-right: solid 2px #2d2d2e;
+            width: 50%;
+            .k-text{
+              text-align: center;
+              width: 100%;
+            }
+          }
+          .rise-mark{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            padding-left: 10px;
+            color: #4ba60c;
+            .rise-text{
+              text-align: center;
+              width: 100%;
+            }
+          }
         }
       }
     }
