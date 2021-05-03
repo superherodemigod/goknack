@@ -1,0 +1,292 @@
+.App {
+  /* text-align: center; */
+  /* The image used */
+  background-image: url(./imgs/background.png);
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  position: relative;
+}
+
+.headerArea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.header {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.menuBtn {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.menuImg {
+  width: 40px;
+  height: 38px;
+}
+
+.balance {
+  background-image: url(./imgs/balance.png);
+  width: 145px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  color: white;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+.bet {
+  background-image: url(./imgs/bet.png);
+  width: 145px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  color: white;
+}
+.balance span,
+.bet span {
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 5px;
+}
+.jackpot {
+  width: 100%;
+  color: white;
+}
+
+.jackpotImg {
+  background-image: url(./imgs/jackpot.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 220px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.jackpotImg span {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.winArea,
+.streakArea {
+  width: 100%;
+}
+
+.winImg {
+  background-image: url(./imgs/win.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 155px;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winImg span {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.streakArea {
+  background-image: url(./imgs/steak-bonus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 55px;
+}
+
+.gameboardArea {
+  position: absolute;
+  background-image: url(./imgs/gameboard.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gameboard {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 10px 5px;
+}
+
+.whiteTile {
+  margin: 2px;
+  background-image: url(./imgs/white-tile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yellowTile {
+  margin: 2px;
+  background-image: url(./imgs/yellow-tile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greenTile {
+  margin: 2px;
+  background-image: url(./imgs/green-tile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blueTile {
+  margin: 2px;
+  background-image: url(./imgs/blue-tile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.purpleTile {
+  margin: 2px;
+  /* background-image: url(./imgs/purple-tile.png); */
+  background-image: url(./imgs/purple-tile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whiteNumber {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px #aaaaaa;
+  color: white;
+}
+.blackNumber {
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px #eeeeee;
+  color: black;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+}
+.anySeven {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anySevenImg {
+  background-image: url(./imgs/anyseven.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 220px;
+  height: 35px;
+}
+
+.diceArea{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-content: space-between; */
+}
+.diceImg{
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.bottomArea{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.guideImg{
+  width: 38px;
+  height: 50px;
+}
+
+.paytableImg{
+  width: 65px;
+  height: 50px;
+}
+
+.rollBtn{
+  border: none;
+  outline: none;
+  background: none;
+  margin-left: 20px;
+}
+.rollBtnImg{
+  width: 190px;
+  height: 80px;
+  margin: 10px;
+}
