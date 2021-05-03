@@ -1,9 +1,6 @@
 .App {
   background-image: url("./image/background.png");
 
-  /* Full height */
-  height: 100%;
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -15,6 +12,7 @@
   height: 102px;
   top: 0;
   width: 100%;
+  display: flex;
   .header-left {
     position: relative;
     width: 50%;
@@ -82,12 +80,64 @@
             }
           }
         }
+        .search_input{
+          width: 45%;
+          background-color: unset;
+          border: none;
+          &:focus{
+            outline: none;
+          }
+        }
+        .search-icon{
+          color: #3c3c3d;
+        }
       }
     }
   }
   .header-right {
     position: relative;
     width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .menubar{
+      display: flex;
+      height: 100%;
+      .menu-item{
+        width: 130px;
+        display: flex;
+        align-items: center;
+        color: #2a2a2b;
+        font-size: 17px;
+        font-weight: bold;
+        .menu-text{
+          color: #47484a;          
+          margin-right: 10px;
+        }
+      }
+    }
+    .header-buttonlist{
+      display: flex;
+      height: 100%;
+      width: 300px;
+      align-items: center;
+      justify-content: space-between;
+      .header-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 45px;
+        border-radius: 5px;
+        .login-button{
+          background-color: #323234;
+          color: white;
+        }
+        .upload-button{
+          background-color: #519622;
+        }
+      }
+    }
   }
 }
 // .container {
