@@ -26,10 +26,20 @@
     .menu-btn{
       // position: absolute;
       // float: left;
+      width: 74px;
+      img{
+        height: 48px;
+      }
     }
     .logo {
-      // posi
-      // margin-left: 30px;
+      width: 170px;
+      padding-left: 30px;
+      img{
+        height: 28px;
+      }
+    }
+    .search_bar{
+
     }
   }
   .header-right {
