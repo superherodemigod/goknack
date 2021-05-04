@@ -8,7 +8,6 @@
 }
 
 .header {
-  position: absolute;
   height: 102px;
   top: 0;
   width: 100%;
@@ -35,21 +34,22 @@
         height: 28px;
       }
     }
-    .search_bar_area {
-      width: 50%;
+    .search-bar-area {
+      width: 40%;
       padding-left: 50px;
-      .search_bar {
+      .search-bar {
+        position: relative;
         background-color: #222223;
         border-radius: 3px;
         padding: 10px 20px 10px 20px;
         display: flex;
         align-items: center;
-        .search_bar_name {
+        .search-bar-name {
           color: white;
           border-right: solid 2px #2d2d2e;
           margin-right: 30px;
         }
-        .search_badge {
+        .search-badge {
           height: 30px;
           width: 150px;
           background-color: #151516;
@@ -79,7 +79,7 @@
             }
           }
         }
-        .search_input {
+        .search-input {
           width: 45%;
           background-color: unset;
           border: none;
@@ -91,6 +91,8 @@
         }
         .search-icon {
           color: #3c3c3d;
+          position: absolute;
+          right: 20px;
         }
       }
     }
@@ -108,7 +110,7 @@
         width: 130px;
         display: flex;
         align-items: center;
-        color: #2a2a2b;
+        color: #2a2a2a;
         font-size: 17px;
         font-weight: bold;
         cursor: pointer;
@@ -153,18 +155,16 @@
     }
   }
 }
-.creator_fans {
-  position: absolute;
-  top: 102px;
+.creator-fans {
   width: 100%;
-  .creator_fans_top {
+  .creator-fans-top {
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
     height: 225px;
     background-color: #151516;
-    .arrow_down {
+    .arrow-down {
       width: 0;
       height: 0;
       border-left: 9px solid transparent;
@@ -175,35 +175,35 @@
     }
     .container {
       justify-content: space-evenly;
-      .item_creator {
+      .item-creator {
         display: flex;
         align-items: center;
-        .text_creator {
+        .text-creator {
           margin-left: 30px;
-          .text_title {
+          .text-title {
             font-size: 18px;
             color: #5ace09;
             text-transform: uppercase;
             font-weight: bold;
           }
-          .text_content {
+          .text-content {
             font-size: 35px;
             color: white;
           }
         }
       }
-      .item_fan {
+      .item-fan {
         display: flex;
         align-items: center;
-        .text_fan {
+        .text-fan {
           margin-left: 30px;
-          .text_title {
+          .text-title {
             font-size: 18px;
             text-transform: uppercase;
             color: #2e2e2e;
             font-weight: bold;
           }
-          .text_content {
+          .text-content {
             font-size: 35px;
             color: #484848;
           }
@@ -211,10 +211,10 @@
       }
     }
   }
-  .creator_fans_content {
+  .creator-fans-content {
     .container {
       flex-direction: column;
-      .img_book {
+      .img-book {
         margin-top: 90px;
       }
       .text-header {
@@ -225,10 +225,67 @@
           font-size: 65px;
           color: white;
         }
-        .text-content{
+        .text-content {
           margin-top: 55px;
           font-size: 21px;
           color: #6f6f6f;
+        }
+      }
+      .pricing-cardlist {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        .pricing-card {
+          width: 20%;
+          padding: 14px;
+          .social-icon {
+            // padding: 40px 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+          }
+          .card-content {
+            border: solid 2px #2a2a2a;
+            padding: 25px;
+            .card-top {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              border-bottom: solid 1px #383838;
+              .card-content-header-text {
+                font-size: 22px;
+                color: #383838;
+                font-weight: bold;
+                margin-bottom: 25px;
+              }
+              .card-content-price-text {
+                font-size: 55px;
+                color: white;
+                margin-bottom: 20px;
+              }
+              .card-content-fee-text {
+                font-size: 16px;
+                color: #2a2a2a;
+                font-style: italic;
+                font-weight: bold;
+                margin-bottom: 40px;
+              }
+            }
+            .card-bottom{
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              font-size: 20px;
+              .card-bottom-text{
+                padding: 40px 20px;
+                color: #555;
+              }
+            }
+          }
         }
       }
     }

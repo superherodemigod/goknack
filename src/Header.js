@@ -17,10 +17,10 @@ class Header extends Component {
           <div className="logo">
             <img src={Logo} alt="" />
           </div>
-          <div className="search_bar_area">
-            <div className="search_bar">
-              <div className="search_bar_name">Dog</div>
-              <div className="search_badge">
+          <div className="search-bar-area">
+            <div className="search-bar">
+              <div className="search-bar-name">Dog</div>
+              <div className="search-badge">
                 <div className="k-mark">
                   <img src={KMark} alt="" />
                   <div className="k-text">0.15</div>
@@ -30,7 +30,7 @@ class Header extends Component {
                   <div className="rise-text">13%</div>
                 </div>
               </div>
-              <input className="search_input" type="text" />
+              <input className="search-input" type="text" />
               <FontAwesomeIcon className="search-icon" icon={faSearch} />
             </div>
           </div>
