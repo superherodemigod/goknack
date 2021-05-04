@@ -180,7 +180,7 @@
         align-items: center;
         .text_creator {
           margin-left: 30px;
-          .text_header {
+          .text_title {
             font-size: 18px;
             color: #5ace09;
             text-transform: uppercase;
@@ -189,7 +189,6 @@
           .text_content {
             font-size: 35px;
             color: white;
-            text-transform: capitalize;
           }
         }
       }
@@ -198,7 +197,7 @@
         align-items: center;
         .text_fan {
           margin-left: 30px;
-          .text_header {
+          .text_title {
             font-size: 18px;
             text-transform: uppercase;
             color: #2e2e2e;
@@ -206,9 +205,30 @@
           }
           .text_content {
             font-size: 35px;
-            text-transform: capitalize;
             color: #484848;
           }
+        }
+      }
+    }
+  }
+  .creator_fans_content {
+    .container {
+      flex-direction: column;
+      .img_book {
+        margin-top: 90px;
+      }
+      .text-header {
+        margin-top: 60px;
+        max-width: 1000px;
+        text-align: center;
+        .text-title {
+          font-size: 65px;
+          color: white;
+        }
+        .text-content{
+          margin-top: 55px;
+          font-size: 21px;
+          color: #6f6f6f;
         }
       }
     }
