@@ -51,12 +51,8 @@ class Header extends Component {
             </div>
           </div>
           <div className="header-buttonlist">
-            <div className="header-button">
-              <div className="login-button">logout</div>
-            </div>
-            <div className="header-button">
-              <div className="upload-button">upload</div>
-            </div>
+            <div className="login-button">logout</div>
+            <div className="upload-button">upload</div>
           </div>
         </div>
       </div>

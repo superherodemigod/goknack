@@ -22,8 +22,7 @@
     color: white;
     height: 100%;
     .menu-btn {
-      // position: absolute;
-      // float: left;
+      cursor: pointer;
       width: 74px;
       img {
         height: 48px;
@@ -45,12 +44,12 @@
         padding: 10px 20px 10px 20px;
         display: flex;
         align-items: center;
-        .search_bar_name{
+        .search_bar_name {
           color: white;
           border-right: solid 2px #2d2d2e;
           margin-right: 30px;
         }
-        .search_badge{
+        .search_badge {
           height: 30px;
           width: 150px;
           background-color: #151516;
@@ -58,37 +57,39 @@
           padding: 4px;
           display: flex;
           align-items: center;
-          .k-mark{
+          .k-mark {
             display: flex;
             align-items: center;
             border-right: solid 2px #2d2d2e;
             width: 50%;
-            .k-text{
+            .k-text {
               text-align: center;
               width: 100%;
             }
           }
-          .rise-mark{
+          .rise-mark {
             display: flex;
             align-items: center;
             width: 50%;
             padding-left: 10px;
             color: #4ba60c;
-            .rise-text{
+            .rise-text {
               text-align: center;
               width: 100%;
             }
           }
         }
-        .search_input{
+        .search_input {
           width: 45%;
           background-color: unset;
           border: none;
-          &:focus{
+          color: white;
+          padding: 0px 10px;
+          &:focus {
             outline: none;
           }
         }
-        .search-icon{
+        .search-icon {
           color: #3c3c3d;
         }
       }
@@ -100,53 +101,75 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .menubar{
+    .menubar {
       display: flex;
       height: 100%;
-      .menu-item{
+      .menu-item {
         width: 130px;
         display: flex;
         align-items: center;
         color: #2a2a2b;
         font-size: 17px;
         font-weight: bold;
-        .menu-text{
-          color: #47484a;          
+        cursor: pointer;
+        .menu-text {
+          color: #47484a;
           margin-right: 10px;
         }
       }
     }
-    .header-buttonlist{
+    .header-buttonlist {
       display: flex;
       height: 100%;
       width: 300px;
       align-items: center;
       justify-content: space-between;
-      .header-button{
+      .login-button {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 135px;
         height: 45px;
         border-radius: 5px;
-        .login-button{
-          background-color: #323234;
-          color: white;
-        }
-        .upload-button{
-          background-color: #519622;
-        }
+        background-color: #323234;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .upload-button {
+        background-color: #519622;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 45px;
+        border-radius: 5px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
       }
     }
   }
 }
-// .container {
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   justify-content: center;
-//   width: 350px;
-//   position: relative;
-// }
+.creator_fans{
+  position: absolute;
+  top: 102px;
+  width: 100%;
+  .creator_fans_top{
+    position: relative;
+    width: 100%;
+    height: 225px;
+    background-color: #151516;
+  }
+}
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1400px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
