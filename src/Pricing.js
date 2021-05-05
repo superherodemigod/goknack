@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import CreatorImg from "./image/creator-icon.png";
-import FanImg from "./image/fan-icon.png";
-import BookImg from "./image/book-icon.png";
+import Benefit from "./image/benefit.png";
 import AmazonImg from "./image/amazon.png";
 import SpotifyImg from "./image/spotify.png";
 import YoutubeImg from "./image/youtube.png";
@@ -11,66 +7,70 @@ import TidalImg from "./image/tidal.png";
 import Logo from "./image/logo.png";
 import BackImg from "./image/image-back.png";
 import BackImgP from "./image/image-back-points.png";
-import Image11 from "./image/image1.png";
-import Image12 from "./image/image2.png";
-import Image21 from "./image/image4.png";
-import Image22 from "./image/image3.png";
-import ArrowDown from "./image/arrowdown.png";
-import ArrowRight from "./image/arrow-right.png";
+import Image12 from "./image/image5.png";
 import Symbol1 from "./image/symbol1.png";
-import ImgCheck from "./image/check-circle.png"
-import ImgWithdraw from "./image/withdrawl-circle.png"
-import KMark from "./image/kmark.png";
+import Symbol2 from "./image/symbol2.png";
+import KMark from "./image/mark-triangle.png";
 import VectorLeft from "./image/Vector-left.png";
 import VectorRight from "./image/Vector-right.png";
 import Vectorbottom from "./image/Vector-bottom.png";
+import Faq from "react-faq-component";
 
-class CreatorFans extends Component {
+const data = {
+  rows: [
+      {
+          title: "How lorem ipsum dolor set quintos valor GoKnack?",
+          content: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ullamcorper urna sit amet blandit vehicula. Pellentesque quam nisl, convallis nec hendrerit a, tincidunt sed enim. Curabitur ut placerat purus. Morbi at dolor vel mauris eleifend ultrices in et risus. Duis vel rhoncus quam. Nam eget ultricies leo. Integer semper, ligula nec imperdiet efficitur, lorem risus pharetra enim, at consectetur elit turpis sit amet diam. Phasellus condimentum at velit nec tempus. Sed iaculis finibus hendrerit.",
+      },
+      {
+          title: "Quintos donec mattis dolor et GoKnack?",
+          content: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ullamcorper urna sit amet blandit vehicula. Pellentesque quam nisl, convallis nec hendrerit a, tincidunt sed enim. Curabitur ut placerat purus. Morbi at dolor vel mauris eleifend ultrices in et risus. Duis vel rhoncus quam. Nam eget ultricies leo. Integer semper, ligula nec imperdiet efficitur, lorem risus pharetra enim, at consectetur elit turpis sit amet diam. Phasellus condimentum at velit nec tempus. Sed iaculis finibus hendrerit.",
+      },
+      {
+          title: "Praesent tempus lorem vitae nulla elementum tempor?",
+          content: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ullamcorper urna sit amet blandit vehicula. Pellentesque quam nisl, convallis nec hendrerit a, tincidunt sed enim. Curabitur ut placerat purus. Morbi at dolor vel mauris eleifend ultrices in et risus. Duis vel rhoncus quam. Nam eget ultricies leo. Integer semper, ligula nec imperdiet efficitur, lorem risus pharetra enim, at consectetur elit turpis sit amet diam. Phasellus condimentum at velit nec tempus. Sed iaculis finibus hendrerit.",
+      },
+      {
+          title: "Lorem ipsum dolor sit amet consectetur adipiscing elit?",
+          content: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ullamcorper urna sit amet blandit vehicula. Pellentesque quam nisl, convallis nec hendrerit a, tincidunt sed enim. Curabitur ut placerat purus. Morbi at dolor vel mauris eleifend ultrices in et risus. Duis vel rhoncus quam. Nam eget ultricies leo. Integer semper, ligula nec imperdiet efficitur, lorem risus pharetra enim, at consectetur elit turpis sit amet diam. Phasellus condimentum at velit nec tempus. Sed iaculis finibus hendrerit.",
+      },
+  ],
+};
+
+const styles = {
+  bgColor: 'transparent',
+  titleTextColor: "white",
+  rowTitleColor: "white",
+  rowContentColor: "#696969",
+  arrowColor: "#696969",
+  rowTitleTextSize: '22px',
+};
+
+const config = {
+  // animate: true,
+  // arrowIcon: "V",
+  // tabFocus: true
+};
+
+class Pricing extends Component {
   render() {
     return (
       <div className="creator-fans">
+        <div className="vector vector-top">
+          <img src={Symbol2} alt=""/>
+        </div>
         <img className="vector vector-left" src={VectorLeft} alt=""/>
         <img className="vector vector-right" src={VectorRight} alt=""/>
         <img className="vector vector-bottom" src={Vectorbottom} alt=""/>
-        <div className="creator-fans-top">
-          <div className="arrow-down"></div>
-          <div className="container">
-            <div className="item-creator">
-              <div className="img-creator">
-                <img src={CreatorImg} alt="" />
-              </div>
-              <div className="text-creator">
-                <div className="text-title">how to</div>
-                <div className="text-content">Become a Creator</div>
-              </div>
-            </div>
-            <div className="item-fan">
-              <div className="img-fan">
-                <img src={FanImg} alt="" />
-              </div>
-              <div className="text-fan">
-                <div className="text-title">steps to</div>
-                <div className="text-content">Become a Fan</div>
-              </div>
-            </div>
-          </div>
-          <div className='symbol'>
-            <img src={Symbol1} alt=""/>
-          </div>
-        </div>
         <div className="creator-fans-content">
           <div className="container">
             <div className="img-book">
-              <img src={BookImg} alt="" />
+              <img src={Benefit} alt="" />
             </div>
             <div className="text-header">
-              <div className="text-title">Becoming a Creator on GoKnack</div>
+              <div className="text-title">A platform that finally benefits you</div>
               <div className="text-content">
-                As a creator, wouldn’t it be great to share your work across
-                different platforms and earn passive income as a fan admires and
-                engages with your work?! Well now you can, let’s compare! Use
-                our share widget and receive a minimum $.06 per engagement.
-                Share on Facebook, Twitter and any other social media platform!
+              As a creator, wouldn’t it be great to share your work across different platforms and earn passive income as a fan admires and engages with your work?!  Well now you can, let’s compare!
               </div>
             </div>
             <div className="pricing-cardlist">
@@ -115,7 +115,7 @@ class CreatorFans extends Component {
                 <div className="card-content">
                   <div className="card-top">
                     <div className="card-content-header-text">Starting @</div>
-                    <div className="card-content-price-text">$0.65</div>
+                    <div className="card-content-price-text">$29</div>
                     <div className="card-content-fee-text">(Upfront fee)</div>
                   </div>
                   <div className="card-bottom">
@@ -171,41 +171,38 @@ class CreatorFans extends Component {
             <div className="content-text-image">
               <div className="content-text">
                 <span className="mark">Lipsum</span>
-                <h1>Becoming a Creator on GoKnack</h1>
-                <p>Receive a minimum $.05 a play with our widget player. Share on Facebook, Twitter, Instagram or any other social media platform. The best part, it’s easy to earn!</p>
-                <p>Our user-centric platform is able to match your play activity to your fan engagement to determine your true earnings. That’s how we’re able to pay more per play confindently.</p>
-                <div className="downarrow">
-                  <img src={ArrowDown} alt=""/>
-                </div>
+                <h1>Quintos Dolor en Set Valor</h1>
+                <p>Proin ut tellus maximus, posuere lectus in, laoreet sem. Nulla vulputate pharetra tortor, sit amet congue ex ullamcorper quis. Phasellus faucibus sed tortor quis porttitor. Curabitur consectetur sodales eros at mattis. </p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur aliquam in nisl sit amet finibus.</p>
               </div>
               <div className="content-image">
                 <img className="back-img" src={BackImg} alt=""/>
                 <img className="back-img-p" src={BackImgP} alt=""/>
-                <div className="img11">
+                <div className="img31">
                   <img className="k-mark" src={KMark} alt="" />
-                  <img src={Image11} alt=""/>
+                  <img src={Image12} alt=""/>
                 </div>
-                <img className="img12" src={Image12} alt=""/>
               </div>
             </div>
             <div className='symbol'>
               <img src={Symbol1} alt=""/>
             </div>
-            <div className="content-text-image">
-              <div className="content-image">
-                <img className="back-img-c" src={BackImg} alt=""/>
-                <img className="back-img-p" src={BackImgP} alt=""/>
-                <img className="img21" src={Image21} alt=""/>
-                <img className="img22" src={Image22} alt=""/>
+            <div className="faq">
+              <div className="title-desc">
+                <h1>Commonly Asked Questions</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas dui ac enim pharetra, in imperdiet.</p>
               </div>
-              <div className="content-text">
-                <span className="mark">Lipsum</span>
-                <h1>It’s Simple,  Here’s How.</h1>
-                <p>After creating an account and you’re ready to  head to the upload button. Praesent ut erat elit. Maecenas <img src={ImgWithdraw} alt=""/> , sapien quis hendrerit molestie, velit sem varius sem, eget vestibulum arcu urna eget augue.</p>
-                <p>Vivamus quis feugiat dui. Sed <img src={ImgCheck} alt=""/> vinar ate. Aenean luctus leo turpis, ut commodo lorem sollicitudin eget. In eu nisl at tellus efficitur tristique non nec nulla.</p>
-                <a className="start-btn">
-                  <p>START EARNING</p>
-                  <img src={ArrowRight} alt=""/>
+              <div className="faq-content">
+                <Faq
+                  data={data}
+                  styles={styles}
+                  config={config}
+                />
+              </div>
+              <div className="contact-us">
+                <h1>Can’t find your answer?</h1>
+                <a className="contact-btn">
+                  CONTACT US
                 </a>
               </div>
             </div>
@@ -215,4 +212,4 @@ class CreatorFans extends Component {
     );
   }
 }
-export default CreatorFans;
+export default Pricing;
